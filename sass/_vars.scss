@@ -1,0 +1,22 @@
+//Color-paletеe
+$Magic-Mint: #96F2EA;
+$Orange: #FFA500;
+
+//Color-theme
+$background-primary: $Magic-Mint;
+$color-active: $Orange;
+
+%Lato-Light{
+    font-family: 'Lato-Light';
+    font-weight: 300;
+}
+
+%Lato-Regular{
+    font-family: 'Lato-Regular';
+    font-weight: 400;
+}
+
+%Lato-Bold{
+    font-family: 'Lato-Bold';
+    font-weight: 700;
+}

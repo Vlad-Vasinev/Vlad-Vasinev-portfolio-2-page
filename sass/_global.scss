@@ -1,0 +1,132 @@
+body {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.translate-links {
+    height: 38px;
+    max-width: 106px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.translate-link {
+    padding: 8px 8px 7px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+        color: #000000;
+        background-color: #ffffff;
+    }
+}
+
+.is-active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.translate-link.ru {
+    margin-left: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header {
+    padding: 24px 10px;
+    background-color: #000;
+    margin-top: 30px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.logo {
+    svg {
+        width: 40px;
+        height: 40px;
+        path {
+            transition: all 0.3s;
+        }
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    &__link {
+        padding: 6px;
+        color: white;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: "Lato-Bold";
+        font-weight: 700;
+        transition: all 0.3s;
+        border-radius: 2px;
+        &:hover {
+            background-color: $color-active;
+        }
+    }
+}
+.contact {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    &__link {
+        svg {
+            width: 30px;
+            height: 30px;
+            path {
+                transition: all 0.3s;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: #ffa500;
+                }
+            }
+        }
+    }
+}
+.title {
+    font-family: "Lato-Bold";
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 55px;
+}
+.footer {
+    padding: 24px 10px;
+    background-color: #000;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        &:hover {
+            svg {
+                path {
+                    fill: $Orange;
+                }
+            }
+        }
+    }
+}
